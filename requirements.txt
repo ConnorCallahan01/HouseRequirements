@@ -1,0 +1,3 @@
+superagi-tools
+pydantic
+requests
