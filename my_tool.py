@@ -21,8 +21,8 @@ class HouseSearchTool(BaseTool):
         headers = {
             'accept': 'text/plain',
             'content-type': 'application/json',
-            'x-openai-key': 'OPENAI_KEY',  # Replace with your OpenAI key
-            'x-api-key': 'PROPGPT_API_KEY'  # Replace with your PropGPT API key
+            'x-openai-key': self.get_tool_config('OPENAI_KEY'),  # Replace with your OpenAI key
+            'x-api-key': self.get_tool_config('PROPGPT_API_KEY')  # Replace with your PropGPT API key
         }
         
         # Make the POST request
