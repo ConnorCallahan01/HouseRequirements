@@ -30,6 +30,6 @@ class HouseSearchTool(BaseTool):
         
         # Process the response and return
         if response.status_code == 200:
-            return response.json().get('results', [])
+            return response.text
         else:
             return ["Error occurred while fetching data from PropGPT API"]
